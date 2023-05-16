@@ -1,10 +1,9 @@
 import re
 import json
 import csv
-ruta_json ="C:\\Users\\Alejo\\Desktop\\python\\infobaus\\discos.json"
-ruta_txt = "C:\\Users\\Alejo\\Desktop\\python\\infobaus\\total.txt"
-ruta_csv = "C:\\Users\\Alejo\\Desktop\\python\\infobaus\\insumo.csv"
-ruta = "C:\\Users\\Alejo\\Desktop\\python\\infobaus\\Insumos.csv - Hoja 1.csv"
+ruta_json ="C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\discos.json"
+ruta_txt = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\total.txt"
+ruta = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\Insumos.csv - Hoja 1.csv"
 def leer_csv(ruta:str)->list:
     # Brief:
     #     Función que abre el archivo en modo de lectura
