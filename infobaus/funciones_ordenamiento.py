@@ -1,7 +1,7 @@
 import re
 ruta = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\Insumos.csv - Hoja 1.csv"
 def leer_csv(ruta:str)->list:
-    # Brief:
+    #Resumen:
     #     Función que abre el archivo en modo de lectura
     #     Solo tiene como parametros a 'ruta' que contiene el path del archivo csv
     #     Su return nos devuelve todo el archivo csv en formato lista
@@ -13,7 +13,7 @@ def leer_csv(ruta:str)->list:
 
 #1
 def listar_lineas(listado:list):
-    # Brief:
+    #Resumen:
     #     Función que convierte cada insumo en una lista y sus datos en items de la misma. 
     #     Cada dato es separado usando las comas como parametro.
     #     Solo tiene como parametros a 'listado', que es del tipo list. Contiene todo el archivo csv.
@@ -30,7 +30,7 @@ def listar_lineas(listado:list):
 
 #2
 def lista_cantidad_marca(datos_insumos:list):
-    # Brief:
+    #Resumen:
     #     Función que convierte la lista de insumos en un diccionario que muestra las marcas y su cantidad de insumos
     #     Solo tiene como parametros a 'datos_insumos', que es una lista
     #     Su return nos devuelve un diccionario cuyas keys son las marcas de los insumos y sus valores son la cantidad de veces
@@ -45,7 +45,7 @@ def lista_cantidad_marca(datos_insumos:list):
 
 #3
 def listar_insumos_marca(diccionario:dict,datos_insumos:list):
-    # Brief:
+    #Resumen:
     #     Función que convierte la lista de insumos en un diccionario que muestra las marcas y su cantidad de insumos.
     #     Tiene como parametros a 'datos_insumos', que es una lista y a 'diccionario' que es el diccionario de marcas.
     #     Printea la marca del insumo y debajo, los productos y el precio de los productos de esa marca.
@@ -57,7 +57,7 @@ def listar_insumos_marca(diccionario:dict,datos_insumos:list):
 
 #4
 def listar_insumos_caracteristica(dato_usuario:str,datos_insumos:list):
-    # Brief:
+    #Resumen:
     #     Función que con utiliza una característica que ingresa el usuario y devueve todos los productos que la tienen.
     #     Tiene como parametros a 'dato_usuario' que es un string que ingresa el usuario y la lista 'datos_insumos'.
     lista_insumos_coincidentes = []
@@ -72,7 +72,7 @@ def listar_insumos_caracteristica(dato_usuario:str,datos_insumos:list):
 
 #5
 def lista_de_precios_ordenada(datos_insumos:list):
-    # Brief:
+    #Resumen:
     #     Función que que extrae todos los precios de la lista de insumos y los añade a una lista
     #     Tiene como parametro a la lista 'datos_insumos'.
     #     Retorna una lista con los precios de los productos como items de la misma.
@@ -84,7 +84,7 @@ def lista_de_precios_ordenada(datos_insumos:list):
     return lista
 
 def ordenar_lista_asc_des(lista:list, asc = True):
-    # Brief:
+    #Resumen:
     #     Función que ordena descendentemente o descendentemente una lista
     #     Tiene como parametro a la lista, que es la lista que queremos ordenar y a asc que nos indica,mediante un booleano
     #     si la lista va a ser ascendente o descendente.
@@ -99,7 +99,7 @@ def ordenar_lista_asc_des(lista:list, asc = True):
     return lista
 
 def listar_por_precio(ordenada:list,datos_insumos:list):
-    # Brief:
+    #Resumen:
     #     Función que muestra el precio y todos los insumos que corresponden a ese precio. En caso de que hayan
     #     varios insumos con ese precio, los insumos se ordenan de manera alfabética.
     #     Tiene como parametro a la 'ordenada' que sería la lista con los precios ordenados

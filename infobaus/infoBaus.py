@@ -1,5 +1,5 @@
-from funciones_ordenamiento import leer_csv,listar_lineas,lista_cantidad_marca,listar_insumos_marca,listar_insumos_caracteristica,lista_de_precios_ordenada,ordenar_lista_asc_des,listar_por_precio
-from funciones_archivos import carrito_de_compras,total_compra,porcentaje,modificar_txt,guardar_disco_duro,archivo_json,leer_archivo_json,inflacion_lista,reemplazar_csv
+from funciones_ordenamiento import *
+from funciones_archivos import *
 
 ruta_json ="C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\discos.json"
 ruta_txt = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\total.txt"
