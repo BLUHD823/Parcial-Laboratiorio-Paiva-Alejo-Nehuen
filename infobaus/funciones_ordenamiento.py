@@ -62,9 +62,6 @@ def listar_insumos_caracteristica(dato_usuario:str,datos_insumos:list):
     #     Tiene como parametros a 'dato_usuario' que es un string que ingresa el usuario y la lista 'datos_insumos'.
     lista_insumos_coincidentes = []
     for linea in datos_insumos:
-
-        # buscar =  re.search(dato_usuario,linea[4])
-        # if (buscar):
         if dato_usuario in linea[4]:
             lista_insumos_coincidentes.append(linea[1])
     for producto in lista_insumos_coincidentes:
