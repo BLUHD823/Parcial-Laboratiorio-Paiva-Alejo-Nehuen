@@ -6,6 +6,7 @@ ruta_txt = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\to
 ruta = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\Insumos.csv - Hoja 1.csv"
 
 multiplicacion = lambda number, porcentaje : number * porcentaje
+
 #6
 def carrito_de_compras(datos_insumos:list):
     # Resumen:
