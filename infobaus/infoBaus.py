@@ -23,6 +23,8 @@ def menu():
         print("9-ACTUALIZAR PRECIOS. ")
         print("10-SALIR DEL PROGRAMA. ")
         eleccion = int(input("INGRESE SU RESPUESTA: "))
+        while eleccion <=0 or eleccion >10:
+            eleccion = int(input("REINGRESE SU RESPUESTA CON LOS VALORES ADECUADOS: "))
         match eleccion:
             case 1:
                 listado = leer_csv(ruta)
@@ -59,5 +61,10 @@ def menu():
             case 9:
                 lista_inflacionaria = inflacion_lista(datos_insumos)
                 reemplazar_csv(ruta,lista_inflacionaria)
-menu()
+
+try:
+    menu()
+except UnboundLocalError:
+    print("\nPARA USAR EL RESTO DE LAS FUNCIONES, PRIMERO TIENE QUE INICIALIZAR LAS PRIMERAS DOS OPCIONES '1-TRAER DATOS DESDE ARCHIVO.' Y '-2LISTAR CANTIDAD POR MARCA.' ")
+    menu()
 
