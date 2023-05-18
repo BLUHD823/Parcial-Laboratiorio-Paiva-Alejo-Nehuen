@@ -1,6 +1,5 @@
 FACTURA: 
-    Producto: Disco Duro Interno    Precio: 159.98 
     Producto: Disco Duro Externo    Precio: 119.99 
 
-    El total de la compra es: 279.96999999999997
-    El subtotal de la compra es: 251.973
+    El total de la compra es: 119.99
+    El subtotal de la compra es: 94.792

@@ -45,12 +45,16 @@ def menu():
                 ordenada = ordenar_lista_asc_des (lista_precios, True)
                 listar_por_precio(ordenada,datos_insumos)
             case 6:
-                carro_compras = carrito_de_compras(datos_insumos)
-                for compra in carro_compras.items():
-                    print(compra)
-                total = total_compra(carro_compras)
-                sub_total = porcentaje(total)
-                modificar_txt(ruta_txt,carro_compras,total,sub_total)
+                try:
+                    carro_compras = carrito_de_compras(datos_insumos)
+                    for compra in carro_compras.items():
+                        print(compra)
+                    total = total_compra(carro_compras)
+                    sub_total = porcentaje(total)
+                    modificar_txt(ruta_txt,carro_compras,total,sub_total)
+                except ValueError:
+                    print("LA CANTIDAD INGRESADA O EL PORCENTAJE DE IMPUESTO NO ES UN NÚMERO, INGRESE UN NÚMERO")
+ 
             case 7:
                 dict_disco = guardar_disco_duro(datos_insumos)
                 archivo_json(ruta_json,dict_disco)
