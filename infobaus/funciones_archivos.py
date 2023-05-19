@@ -1,10 +1,12 @@
 import re
 import csv
 import json
-ruta_json ="C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\discos.json"
+#Resumen:
+#   Variable que guarda la ruta del archivo txt
 ruta_txt = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\total.txt"
-ruta = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\Insumos.csv - Hoja 1.csv"
 
+#Resumen:
+#   Variable que guarda una función lambda usada para multiplicar
 multiplicacion = lambda number, porcentaje : number * porcentaje
 
 #6

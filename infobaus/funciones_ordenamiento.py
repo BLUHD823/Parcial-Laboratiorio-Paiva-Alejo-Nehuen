@@ -1,5 +1,7 @@
 import re
 ruta = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\Insumos.csv - Hoja 1.csv"
+
+
 def leer_csv(ruta:str)->list:
     #Resumen:
     #     Función que abre el archivo en modo de lectura

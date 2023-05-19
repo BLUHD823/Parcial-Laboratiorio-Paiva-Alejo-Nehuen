@@ -1,11 +1,11 @@
 from funciones_ordenamiento import *
 from funciones_archivos import *
-
+#Resumen:
+#   Variables que guardan las rutas del archivos json donde se guardan los discos duros y la ruta del archivo .csv con los insumos
 ruta_json ="C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\discos.json"
-ruta_txt = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\total.txt"
 ruta = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\Insumos.csv - Hoja 1.csv"
 
-def menu():
+def menu(ruta,ruta_json):
     eleccion = 0
     while eleccion != 10:
         print("-----------------------------------------")
@@ -54,21 +54,23 @@ def menu():
                     modificar_txt(ruta_txt,carro_compras,total,sub_total)
                 except ValueError:
                     print("LA CANTIDAD INGRESADA O EL PORCENTAJE DE IMPUESTO NO ES UN NÚMERO, INGRESE UN NÚMERO")
- 
             case 7:
-                dict_disco = guardar_disco_duro(datos_insumos)
-                archivo_json(ruta_json,dict_disco)
+                    dict_disco = guardar_disco_duro(datos_insumos)
+                    archivo_json(ruta_json,dict_disco)
             case 8:
-                lista_json = leer_archivo_json(ruta_json)
-                for item in lista_json:
-                    print(f"    {item}")
+                try:
+                    lista_json = leer_archivo_json(ruta_json)
+                    for item in lista_json:
+                        print(f"    {item}")
+                except json.decoder.JSONDecodeError:
+                    print("No hay valores guardados en el archivo 'discos.json' ingrese datos con la opción 8.")
             case 9:
                 lista_inflacionaria = inflacion_lista(datos_insumos)
                 reemplazar_csv(ruta,lista_inflacionaria)
 
 try:
-    menu()
+    menu(ruta,ruta_json)
 except UnboundLocalError:
     print("\nPARA USAR EL RESTO DE LAS FUNCIONES, PRIMERO TIENE QUE INICIALIZAR LAS PRIMERAS DOS OPCIONES '1-TRAER DATOS DESDE ARCHIVO.' Y '-2LISTAR CANTIDAD POR MARCA.' ")
-    menu()
+    menu(ruta,ruta_json)
 
