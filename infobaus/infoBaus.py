@@ -26,6 +26,7 @@ def menu(ruta,ruta_json):
         print("8-LEER JSON. ")
         print("9-ACTUALIZAR PRECIOS. ")
         print("10-SALIR DEL PROGRAMA. ")
+        print("11-CREAR NUEVO PRODUCTO. ")
         eleccion = int(input("INGRESE SU RESPUESTA: "))
         while eleccion <=0 or eleccion >11:
             eleccion = int(input("REINGRESE SU RESPUESTA CON LOS VALORES ADECUADOS: "))
