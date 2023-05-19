@@ -139,3 +139,87 @@ def reemplazar_csv(ruta:str,lista_inflacionaria:list):
         escritura = csv.writer(file)
         for linea in lista_inflacionaria:
             escritura.writerow(linea)
+
+#11
+def traer_marcas(ruta_marcas:str):
+    marcas = []
+    with open(ruta_marcas,'r',encoding='UTF-8') as file:
+        for linea in file:
+            marcas.append(linea.strip("\n"))
+    return marcas
+
+def elegir_marca(listado_marcas:list):
+    marca_elegida = None
+    eleccion = input("INGRESE EL NOMBRE DE LA MARCA DEL NUEVO PRODUCTO: ")
+    for item in listado_marcas:
+        if eleccion == item:
+            marca_elegida = item
+    return marca_elegida
+
+
+
+def ingresar_id():
+    id = int(input("INGRESE UN ID: "))
+    while id < 50:
+        id = int(input("REINGRESE UN ID VÁLIDO: "))
+    return id
+    
+def ingresar_precio():
+    precio = float(input("INGRESE EL PRECIO QUE QUIERA: "))
+    while precio <= 0:
+        precio = int(input("REINGRESE UN PRECIO VÁLIDO: "))
+    precio = float(precio)
+    precio_final = "$"+ str(precio)
+    return precio_final
+
+def agregar_caracteristica():
+    string_caracteristica = ""
+    respuesta = "Si"
+    caract_ingresada = input("INGRESE UNA CARACTERÍSTICA: ")
+    string_caracteristica = string_caracteristica + caract_ingresada
+    respuesta = input("DESEA AGREGAR MÁS CARACTERÍSTICAS: ")
+    while respuesta == "Si":
+         caract_ingresada = input("INGRESE UNA CARACTERÍSTICA: ")
+         string_caracteristica = string_caracteristica + "|!*|" + caract_ingresada
+         respuesta = input("DESEA AGREGAR MÁS CARACTERÍSTICAS: ")
+    return string_caracteristica
+
+def crear_linea(listado_marcas:list):
+    linea = []
+    id_elegido = ingresar_id()
+    linea.append(id_elegido)
+
+    novo_producto = input("INGRESE EL NOMBRE DEL NUEVO PRODUCTO: ")
+    linea.append(novo_producto)
+    for item in listado_marcas:
+        print(f"{item}")
+
+    marca_elegida = elegir_marca(listado_marcas)
+    linea.append(marca_elegida)
+
+    precio = ingresar_precio()
+    linea.append(precio)
+
+    caracteristica = agregar_caracteristica()
+    linea.append(caracteristica)
+    return linea
+
+def elegir_archivo(ruta_arch_csv,ruta_arch_json,datos_insumos):
+    diccionario = {}
+    elegir = input("INGRESE EL TIPO DE ARCHIVO")
+    if elegir == "csv":
+         with open(ruta_arch_csv,'w+',encoding='UTF-8', newline="") as file:
+            escritura = csv.writer(file)
+            for linea in datos_insumos:
+                escritura.writerow(linea)
+    
+    
+    
+                
+
+    
+
+
+
+
+

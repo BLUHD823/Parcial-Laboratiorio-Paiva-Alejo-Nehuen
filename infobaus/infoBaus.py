@@ -5,6 +5,9 @@ from funciones_archivos import *
 ruta_json ="C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\discos.json"
 ruta = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\Insumos.csv - Hoja 1.csv"
 ruta_txt = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\total.txt"
+ruta_marcas = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\marcas.txt"
+ruta_arch_csv = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\archivo.csv"
+ruta_arch_json = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\archivo.json"
 
 def menu(ruta,ruta_json):
     eleccion = 0
@@ -24,7 +27,7 @@ def menu(ruta,ruta_json):
         print("9-ACTUALIZAR PRECIOS. ")
         print("10-SALIR DEL PROGRAMA. ")
         eleccion = int(input("INGRESE SU RESPUESTA: "))
-        while eleccion <=0 or eleccion >10:
+        while eleccion <=0 or eleccion >11:
             eleccion = int(input("REINGRESE SU RESPUESTA CON LOS VALORES ADECUADOS: "))
         match eleccion:
             case 1:
@@ -68,6 +71,17 @@ def menu(ruta,ruta_json):
             case 9:
                 lista_inflacionaria = inflacion_lista(datos_insumos)
                 reemplazar_csv(ruta,lista_inflacionaria)
+            case 11:
+                listado_marcas = traer_marcas(ruta_marcas)
+                lista = crear_linea(listado_marcas)
+                print(lista)
+                datos_insumos.append(lista)
+                print(datos_insumos)
+                elegir_archivo(ruta_arch_csv,ruta_arch_json,datos_insumos)
+                
+                
+                
+                
 
 try:
     menu(ruta,ruta_json)
