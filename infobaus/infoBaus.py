@@ -80,10 +80,6 @@ def menu(ruta,ruta_json):
                 print(datos_insumos)
                 elegir_archivo(ruta_arch_csv,ruta_arch_json,datos_insumos)
                 
-                
-                
-                
-
 try:
     menu(ruta,ruta_json)
 except UnboundLocalError:
