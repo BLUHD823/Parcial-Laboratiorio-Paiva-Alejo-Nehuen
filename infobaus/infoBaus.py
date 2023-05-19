@@ -4,6 +4,7 @@ from funciones_archivos import *
 #   Variables que guardan las rutas del archivos json donde se guardan los discos duros y la ruta del archivo .csv con los insumos
 ruta_json ="C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\discos.json"
 ruta = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\Insumos.csv - Hoja 1.csv"
+ruta_txt = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\total.txt"
 
 def menu(ruta,ruta_json):
     eleccion = 0
@@ -72,5 +73,8 @@ try:
     menu(ruta,ruta_json)
 except UnboundLocalError:
     print("\nPARA USAR EL RESTO DE LAS FUNCIONES, PRIMERO TIENE QUE INICIALIZAR LAS PRIMERAS DOS OPCIONES '1-TRAER DATOS DESDE ARCHIVO.' Y '-2LISTAR CANTIDAD POR MARCA.' ")
+    menu(ruta,ruta_json)
+except ValueError:
+    print("\nTIENE QUE INGRESAR UN NÚMERO PARA HACER USO DE LAS FUNCIONES.")
     menu(ruta,ruta_json)
 
