@@ -29,7 +29,6 @@ def menu(ruta,ruta_json):
         match eleccion:
             case 1:
                 listado = leer_csv(ruta)
-                
                 datos_insumos = listar_lineas(listado)
                 for linea in datos_insumos:
                     print(linea)

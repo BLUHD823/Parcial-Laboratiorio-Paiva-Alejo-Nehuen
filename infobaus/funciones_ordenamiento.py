@@ -82,7 +82,7 @@ def lista_de_precios_ordenada(datos_insumos:list):
             lista.append(item_de_linea)
     return lista
 
-def ordenar_lista_asc_des(lista:list, asc = True):
+def ordenar_lista_asc_des(lista:list, des = True):
     #Resumen:
     #     Función que ordena descendentemente o descendentemente una lista
     #     Tiene como parametro a la lista, que es la lista que queremos ordenar y a asc que nos indica,mediante un booleano
@@ -91,7 +91,7 @@ def ordenar_lista_asc_des(lista:list, asc = True):
     tam = len(lista)
     for i in range(0, tam-1):
         for j in range(i + 1, tam):
-            if (asc and lista[i] < lista[j]) or (not asc and  lista[i] > lista[j]):
+            if (des and lista[i] < lista[j]) or (not des and  lista[i] > lista[j]):
                     aux = lista[i]
                     lista[i] = lista[j]
                     lista[j] = aux
