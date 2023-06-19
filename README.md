@@ -1,5 +1,5 @@
 # Parcial-Laboratiorio Alejo Nehuén Paiva
-| Materia:Laboratorio de Computación|
+| Materia:       |Laboratorio de Computación|
 | :------------: | :-------------: | 
 | Apellido       | Paiva           | 
 | Nombre         | Alejo Nehuén    | 
