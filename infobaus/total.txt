@@ -1,5 +1,5 @@
 FACTURA: 
-    Producto: SSD Interno    Precio: 399.96 
+    Producto: SSD Interno    Precio: 799.92 
 
-    El total de la compra es: 399.96
-    El subtotal de la compra es: 399.96
+    El total de la compra es: 799.92
+    El subtotal de la compra es: 799.92

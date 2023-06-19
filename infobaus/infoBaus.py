@@ -51,14 +51,14 @@ def menu(ruta,ruta_json):
                     listar_insumos_caracteristica(dato_usuario,datos_insumos)
                 case 5:
                     diccionario = crear_diccionario(datos_insumos)
-                    diccionario_ordenado_alfabeticamente = ordenar_diccionario_asc_des(diccionario,'Marca', False)
-                    for linea in diccionario_ordenado_alfabeticamente:
+                    diccionario_ordenado_descendente = ordenar_diccionario_asc_des(diccionario,'Precio', True)
+                    for linea in diccionario_ordenado_descendente:
                         for key,value in linea.items():
                             print(f"{key}: {value}")
                         print("\n")
                     print("///////////////////////////////////////////////////////////////////////////////////////////")
-                    diccionario_ordenado_descendente = ordenar_diccionario_asc_des(diccionario,'Precio', True)
-                    for linea in diccionario_ordenado_descendente:
+                    diccionario_ordenado_alfabeticamente = ordenar_diccionario_asc_des(diccionario_ordenado_descendente,'Marca', False)
+                    for linea in diccionario_ordenado_alfabeticamente:
                         for key,value in linea.items():
                             print(f"{key}: {value}")
                         print("\n")
