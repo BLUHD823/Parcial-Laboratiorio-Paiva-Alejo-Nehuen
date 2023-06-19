@@ -28,6 +28,9 @@ def listar_lineas(listado:list):
     for linea in lista_linea:
         if linea[2] == " Samsung":
             linea[2] = "Samsung"
+        if linea[0] == '22':
+            linea[4] = linea[4] + ', ' + linea[5]
+            linea.pop(5)
     return lista_linea
 
 def agregar_elemento(datos_insumos:list):
@@ -86,22 +89,6 @@ def listar_insumos_caracteristica(dato_usuario:str,datos_insumos:list):
 
 #5
 
-
-def ordenar_lista_asc_des(lista:list, des = True):
-    #Resumen:
-    #     Función que ordena descendentemente o descendentemente una lista
-    #     Tiene como parametro a la lista, que es la lista que queremos ordenar y a asc que nos indica,mediante un booleano
-    #     si la lista va a ser ascendente o descendente.
-    #     Retorna una lista con los precios de los productos como items de la misma.
-    tam = len(lista)
-    for i in range(0, tam-1):
-        for j in range(i + 1, tam):
-            if (des and lista[i] < lista[j]) or (not des and  lista[i] > lista[j]):
-                    aux = lista[i]
-                    lista[i] = lista[j]
-                    lista[j] = aux
-    return lista
-
 def ordenar_diccionario_asc_des(lista:list,key:str,des = True,):
     #Resumen:
     #     Función que ordena descendentemente o descendentemente un diccionario
@@ -132,6 +119,8 @@ def crear_diccionario(datos_insumos: list):
         caracteristica = linea[4].split("|!*|")  
         diccionario['Característica'] = caracteristica[0]
         lista_diccionarios.append(diccionario)
+        diccionario['Stock'] = linea[5]
+        
     return lista_diccionarios
 
 

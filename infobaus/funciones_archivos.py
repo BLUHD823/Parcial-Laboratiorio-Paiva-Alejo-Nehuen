@@ -34,7 +34,9 @@ def carrito_de_compras(datos_insumos:list):
                     factura[key] = multiplicacion(precio,cantidad)
         respuesta = input("¿DESEA SEGUIR INGRESANDO PRODUCTOS(Si/No)?: ")
         while respuesta != "Si" and respuesta != "No": 
-            respuesta = input("REINGRESE UNA RESPUESTA CORRECTO(SI/NO): ")
+            respuesta = input("REINGRESE UNA RESPUESTA CORRECTO(Si/No): ")
+        if respuesta == "Si":
+            bandera = False
     return factura
 
 def total_compra(carro_compras:dict):
@@ -212,7 +214,7 @@ def agregar_caracteristica():
     while respuesta == "Si":
         caract_ingresada = input("INGRESE UNA CARACTERÍSTICA: ")
         string_caracteristica = string_caracteristica + "|!*|" + caract_ingresada
-        respuesta = input("DESEA AGREGAR MÁS CARACTERÍSTICAS: ")
+        respuesta = input("DESEA AGREGAR MÁS CARACTERÍSTICAS(Si/No): ")
     return string_caracteristica
 
 def crear_linea(listado_marcas:list,datos_insumos:list):

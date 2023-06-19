@@ -1,5 +1,6 @@
 FACTURA: 
-    Producto: Lolas    Precio: 553.0 
+    Producto: SSD Interno    Precio: 499.95 
+    Producto: Disco Duro Externo    Precio: 839.93 
 
-    El total de la compra es: 553.0
-    El subtotal de la compra es: 0.0
+    El total de la compra es: 1339.8799999999999
+    El subtotal de la compra es: 1058.505
