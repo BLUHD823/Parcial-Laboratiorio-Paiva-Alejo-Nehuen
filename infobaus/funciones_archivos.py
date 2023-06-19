@@ -1,5 +1,6 @@
 import csv
 import json
+import random
 #Resumen:
 #   Variable que guarda la ruta del archivo txt
 ruta_txt = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\total.txt"
@@ -17,11 +18,17 @@ def carrito_de_compras(datos_insumos:list):
     #     Retorna un diccionario que funciona a modo de factura mostrando todos los productos y el total de cada uno
     respuesta = "Si"
     factura = {}
+    bandera = False
+    
     while respuesta=="Si":
-        producto = input("INGRESE EL NOMBRE DEL PRODUCTO: ")
-        cantidad = float(input("INGRESE LA CANTIDAD DEL PRODUCTO QUE QUIERE: "))
-        for linea in datos_insumos:
+        while bandera == False:
+            producto = input("INGRESE EL NOMBRE DEL PRODUCTO: ")
+            for linea in datos_insumos:
                 if producto == linea[1]:
+                    bandera = True
+                    cantidad = float(input(f"INGRESE LA CANTIDAD DEL PRODUCTO({linea[5]}): "))
+                    while cantidad > linea[5]:
+                        cantidad = float(input(f"REINGRESE UNA CANTIDAD QUE SEA MENOR O IGUAL AL STOCK({linea[5]}): "))
                     precio = float(linea[3].strip("$"))
                     key = linea[1]
                     factura[key] = multiplicacion(precio,cantidad)
@@ -45,7 +52,9 @@ def porcentaje(total):
     #     Función que hace el subtotal de los precios de los productos
     #     Tiene como parametro a al str 'total'
     #     Retorna el resultado del impuesto, ingresado por el usuario, multiplicado por el total de los precios
-    impuesto = int(input("INGRESE EL PORCENTAJE DEL IMPUESTO: "))
+    impuesto = int(input("INGRESE EL PORCENTAJE DEL IMPUESTO(Tiene que ser de entre 0% y 100%): "))
+    while impuesto < 0 or impuesto > 100:
+        impuesto = int(input("REINGRESE EL PORCENTAJE DEL IMPUESTO(Tiene que ser de entre 0% y 100%): "))
     impuesto = impuesto/100
     sub_total = total - multiplicacion(total,impuesto)
     sub_total = round(sub_total,3)
@@ -101,7 +110,6 @@ def leer_archivo_json(ruta_json:str):
             key = str(key)
             item = (f"{key}: {value}")
             lista_json.append(item)
-
     return lista_json
 
 #9
@@ -142,6 +150,10 @@ def reemplazar_csv(ruta:str,lista_inflacionaria:list):
 
 #11
 def traer_marcas(ruta_marcas:str):
+    # Resumen:
+    #     Función que guarda cada una de las marcas existentes en el archivo de marcas.txt.
+    #     Tiene como parametro a la ruta del archivo txt donde se ubican las marcas.
+    #     Retorna una lista con las marcas del archivo txt como items.
     marcas = []
     with open(ruta_marcas,'r',encoding='UTF-8') as file:
         for linea in file:
@@ -149,22 +161,34 @@ def traer_marcas(ruta_marcas:str):
     return marcas
 
 def elegir_marca(listado_marcas:list):
-    marca_elegida = None
-    eleccion = input("INGRESE EL NOMBRE DE LA MARCA DEL NUEVO PRODUCTO: ")
-    for item in listado_marcas:
-        if eleccion == item:
-            marca_elegida = item
+    # Resumen:
+    #     Función que permite al usuario elegir entre las marcas guardadas dentro del listado de marcas.
+    #     Tiene como parametro a la lista donde están guardadas cada una de las marcas.
+    #     Retorna una variable que contiene la marca elegida por el usuario.
+    marca_elegida = ""
+    bandera = False
+    while bandera == False:
+        eleccion = input("INGRESE EL NOMBRE DE LA MARCA DEL NUEVO PRODUCTO: ")
+        for item in listado_marcas:
+            if eleccion == item:
+                marca_elegida = item
+                bandera = True
     return marca_elegida
 
 
-
-def ingresar_id():
-    id = int(input("INGRESE UN ID: "))
-    while id < 50:
-        id = int(input("REINGRESE UN ID VÁLIDO: "))
+def crear_id(datos_insumos):
+    # Resumen:
+    #     Función que crea un id apartir de los existentes dentro de datos insumos.
+    #     Tiene como parametro a la lista datos_insumos.
+    #     Retorna una variable que contiene el id asignado.
+    ids_existentes = len(datos_insumos)
+    id = ids_existentes + 1
     return id
     
 def ingresar_precio():
+    # Resumen:
+    #     Función que le permite al usuario asignarle un precio(entero o flotante), que luego el programa convierte a flotante, para luego pasarlo a str y agregarle el '$'.
+    #     Retorna una variable que contiene el precio asignado por el usuario en modo de string con el símbolo '$'.
     precio = float(input("INGRESE EL PRECIO QUE QUIERA: "))
     while precio <= 0:
         precio = int(input("REINGRESE UN PRECIO VÁLIDO: "))
@@ -173,20 +197,29 @@ def ingresar_precio():
     return precio_final
 
 def agregar_caracteristica():
+    # Resumen:
+    #     Función que le permite al usuario asignarle una o más características al insumo.
+    #     Retorna una variable que la o las características que el usuario asignó.
     string_caracteristica = ""
     respuesta = "Si"
     caract_ingresada = input("INGRESE UNA CARACTERÍSTICA: ")
     string_caracteristica = string_caracteristica + caract_ingresada
-    respuesta = input("DESEA AGREGAR MÁS CARACTERÍSTICAS: ")
+    respuesta = input("DESEA AGREGAR MÁS CARACTERÍSTICAS(Si/No): ")
+    while respuesta != "Si" and respuesta != "No": 
+        respuesta = input("REINGRESE UNA RESPUESTA CORRECTA(SI/NO): ")
     while respuesta == "Si":
-         caract_ingresada = input("INGRESE UNA CARACTERÍSTICA: ")
-         string_caracteristica = string_caracteristica + "|!*|" + caract_ingresada
-         respuesta = input("DESEA AGREGAR MÁS CARACTERÍSTICAS: ")
+        caract_ingresada = input("INGRESE UNA CARACTERÍSTICA: ")
+        string_caracteristica = string_caracteristica + "|!*|" + caract_ingresada
+        respuesta = input("DESEA AGREGAR MÁS CARACTERÍSTICAS: ")
     return string_caracteristica
 
-def crear_linea(listado_marcas:list):
+def crear_linea(listado_marcas:list,datos_insumos:list):
+    # Resumen:
+    #     Función que apartir de las anteriores funciones crea una lista cuyos items son los mismos tipos de datos que tiene cada uno de los insumos preexistentes.
+    #     Tiene como parametro al listado_de_marcas y a datos insumos.
+    #     Retorna una lista cuyos items y datos están de esta manera "ID,NOMBRE,MARCA,PRECIO,CARACTERISTICAS". De la misma manera que el resto de los insumos.
     linea = []
-    id_elegido = ingresar_id()
+    id_elegido = crear_id(datos_insumos)
     linea.append(id_elegido)
 
     novo_producto = input("INGRESE EL NOMBRE DEL NUEVO PRODUCTO: ")
@@ -202,17 +235,26 @@ def crear_linea(listado_marcas:list):
 
     caracteristica = agregar_caracteristica()
     linea.append(caracteristica)
+
+    stock = random.randint(0,10)
+    linea.append(stock)
     return linea
 
-def elegir_archivo(ruta_arch_csv,ruta_arch_json,datos_insumos):
-    diccionario = {}
-    elegir = input("INGRESE EL TIPO DE ARCHIVO")
+def elegir_archivo(ruta_arch_csv,ruta_arch_json,datos_insumos,diccionario_actualizado):
+    # Resumen:
+    #     Función que le permite al usuario elegir el tipo de archivo en el que guardar la lista de insumos actualizada con los productos que agregó el usuario. Las opciones serían json o csv.
+    #     Tiene como parametro al diccionario_actualizado(para usarlo en json), datos insumos(para usarlo en csv) y ruta_arch_csv y, ruta_arch_json que las rutas de los archivos csv y json.
+    elegir = input("INGRESE EL TIPO DE ARCHIVO(csv/json): ")
+    while elegir != "csv" and elegir != "json":
+        elegir = input("INGRESE UN TIPO DE ARCHIVO CORRECTO(csv/json): ")
     if elegir == "csv":
          with open(ruta_arch_csv,'w+',encoding='UTF-8', newline="") as file:
             escritura = csv.writer(file)
             for linea in datos_insumos:
                 escritura.writerow(linea)
-    
+    else:
+         with open(ruta_arch_json,'w+',encoding='UTF-8', newline="") as file:
+            json.dump(diccionario_actualizado,file,indent=4)
     
     
                 

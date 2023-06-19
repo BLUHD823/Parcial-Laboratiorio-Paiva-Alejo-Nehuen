@@ -1,4 +1,4 @@
-import re
+import random
 ruta = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\Insumos.csv - Hoja 1.csv"
 
 
@@ -30,6 +30,12 @@ def listar_lineas(listado:list):
             linea[2] = "Samsung"
     return lista_linea
 
+def agregar_elemento(datos_insumos:list):
+    #Resumen:
+    #     Función que que usando map y lambda agrega a cada insumo de datos_insumos un stock random de entre 0 y 10. 
+    #     Solo tiene como parametro a la lista datos_insumos.
+    list(map(lambda insumos: insumos.append(random.randint(0,10)),datos_insumos))
+
 #2
 def lista_cantidad_marca(datos_insumos:list):
     #Resumen:
@@ -51,11 +57,20 @@ def listar_insumos_marca(diccionario:dict,datos_insumos:list):
     #     Función que convierte la lista de insumos en un diccionario que muestra las marcas y su cantidad de insumos.
     #     Tiene como parametros a 'datos_insumos', que es una lista y a 'diccionario' que es el diccionario de marcas.
     #     Printea la marca del insumo y debajo, los productos y el precio de los productos de esa marca.
+    bandera = False
     for marca in diccionario:
         print(f"{marca}: ")
-        for linea in datos_insumos:
-            if marca in linea:
-                print(f"    Nombre: {linea[1]}///Precio: {linea[3]} ")
+    
+    while bandera == False:
+        marca_usuario = input("INGRESE EL NOMBRE DE LA MARCA: ")
+        for marca in diccionario:
+            if marca_usuario == marca:
+                bandera = True
+                print(f"{marca_usuario}: ")
+                for linea in datos_insumos:
+                    if marca_usuario in linea[2]:
+                        print(f"    Nombre: {linea[1]}///Precio: {linea[3]} ")
+    
 
 #4
 def listar_insumos_caracteristica(dato_usuario:str,datos_insumos:list):
@@ -70,17 +85,7 @@ def listar_insumos_caracteristica(dato_usuario:str,datos_insumos:list):
         print(f"    {producto}")
 
 #5
-def lista_de_precios_ordenada(datos_insumos:list):
-    #Resumen:
-    #     Función que que extrae todos los precios de la lista de insumos y los añade a una lista
-    #     Tiene como parametro a la lista 'datos_insumos'.
-    #     Retorna una lista con los precios de los productos como items de la misma.
-    lista = []
-    for linea in datos_insumos:
-        item_de_linea = float(linea[3].strip("$"))
-        if  item_de_linea not in lista:
-            lista.append(item_de_linea)
-    return lista
+
 
 def ordenar_lista_asc_des(lista:list, des = True):
     #Resumen:
@@ -97,24 +102,36 @@ def ordenar_lista_asc_des(lista:list, des = True):
                     lista[j] = aux
     return lista
 
-def listar_por_precio(ordenada:list,datos_insumos:list):
+def ordenar_diccionario_asc_des(lista:list,key:str,des = True,):
     #Resumen:
-    #     Función que muestra el precio y todos los insumos que corresponden a ese precio. En caso de que hayan
-    #     varios insumos con ese precio, los insumos se ordenan de manera alfabética.
-    #     Tiene como parametro a la 'ordenada' que sería la lista con los precios ordenados
+    #     Función que ordena descendentemente o descendentemente un diccionario
+    #     Tiene como parametro a la lista, que es la lista que queremos ordenar, y la key del diccionario y a asc que nos indica,mediante un booleano
     #     si la lista va a ser ascendente o descendente.
-    #     Printea los precios y la marca, el id y la primera característica de los insumos que corresponden a ese precio.
-    lista_marcas_ordenar = []
-    for precio in ordenada:
-        precio = str(precio)
-        print(precio)
-        for linea in datos_insumos:
-            for item in linea:
-                buscar = re.search(precio,item)
-                if (buscar): 
-                    caracteristica = linea[4].split("|!*|")
-                    lista_marcas_ordenar.append(f"    Marca: {linea[2]}///ID:{linea[0]}///Nombre: {linea[1]}///caracteristica: {caracteristica[0]}")
-        lista_alfabetica = ordenar_lista_asc_des(lista_marcas_ordenar,False)
-        for insumo in lista_alfabetica:
-            print(insumo)
-        lista_marcas_ordenar.clear()
+    #     Retorna una lista que está ordenada usando los valores de las key específicada como referencia.
+    tam = len(lista)
+    for i in range(0, tam-1):
+        for j in range(i + 1, tam):
+            if (des and lista[i][key] < lista[j][key]) or (not des and  lista[i][key] > lista[j][key]):
+                    aux = lista[i]
+                    lista[i] = lista[j]
+                    lista[j] = aux
+    return lista
+
+def crear_diccionario(datos_insumos: list):
+    #Resumen:
+    #     Función que crea una lista en la que se almacenará cada una las lineas, de 'datos_insumos', como un diccionario
+    #     Tiene como parametro a la lista de datos insumos
+    #     Retorna una lista cuyas lineas son diccionarios que contiene las carácterísticas de cada insumo
+    lista_diccionarios = []
+    for linea in datos_insumos:
+        diccionario ={}
+        diccionario['ID'] = linea[0]
+        diccionario['Nombre'] = linea[1]
+        diccionario['Marca'] = linea[2]
+        diccionario['Precio'] = float(linea[3].strip("$"))
+        caracteristica = linea[4].split("|!*|")  
+        diccionario['Característica'] = caracteristica[0]
+        lista_diccionarios.append(diccionario)
+    return lista_diccionarios
+
+

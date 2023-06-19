@@ -1,5 +1,5 @@
 FACTURA: 
-    Producto: Disco Duro Externo    Precio: 119.99 
+    Producto: SSD Interno    Precio: 299.96999999999997 
 
-    El total de la compra es: 119.99
-    El subtotal de la compra es: 119.99
+    El total de la compra es: 299.96999999999997
+    El subtotal de la compra es: 236.976
