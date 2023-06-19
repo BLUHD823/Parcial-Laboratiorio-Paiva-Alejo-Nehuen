@@ -3,7 +3,7 @@ import json
 import random
 #Resumen:
 #   Variable que guarda la ruta del archivo txt
-ruta_txt = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\total.txt"
+ruta_txt = ".\total.txt"
 
 #Resumen:
 #   Variable que guarda una función lambda usada para multiplicar
@@ -120,11 +120,13 @@ def inflacion(lista:list):
     #     en caso de que lo tenga le hace un aumento del  del 8,4%.
     #     Tiene como parametro a una lista.
     #     Retorna un string compuesto del resultado del aumento concatenado con el signo '$'
+    
     resultado = 0
-    if "$" in lista:
-        numero = float(lista.strip("$"))
-        resultado = numero + multiplicacion(numero,0.084)
-        resultado = "$"+str(resultado)
+    for item in lista:
+        if isinstance(item, str) and "$" in item:
+            numero = float(item.strip("$"))
+            resultado = numero + multiplicacion(numero,0.084)
+            resultado = "$"+str(resultado)
     return resultado
 
 def inflacion_lista(datos_insumos:list):
@@ -133,8 +135,8 @@ def inflacion_lista(datos_insumos:list):
     #     Tiene como parametro a la lista 'datos_insumos'.
     #     Retorna una lista con los Discos Duros del archivo json como items.
     for linea in datos_insumos:
-        calculo = list((map(inflacion,linea)))
-        linea[3] = calculo[3]
+        calculo = list((map(inflacion,[linea])))
+        linea[3] = calculo[0]
     return datos_insumos
 
 

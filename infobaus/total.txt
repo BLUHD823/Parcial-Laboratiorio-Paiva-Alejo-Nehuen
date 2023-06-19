@@ -1,5 +1,5 @@
 FACTURA: 
-    Producto: SSD Interno    Precio: 299.96999999999997 
+    Producto: Lolas    Precio: 553.0 
 
-    El total de la compra es: 299.96999999999997
-    El subtotal de la compra es: 236.976
+    El total de la compra es: 553.0
+    El subtotal de la compra es: 0.0

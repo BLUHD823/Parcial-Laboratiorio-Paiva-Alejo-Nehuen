@@ -1,5 +1,5 @@
 import random
-ruta = "C:\\Users\\Alejo\\Desktop\\bauss\\Parcial-Laboratiorio\\infobaus\\Insumos.csv - Hoja 1.csv"
+ruta = ".\Insumos.csv - Hoja 1.csv"
 
 
 def leer_csv(ruta:str)->list:
