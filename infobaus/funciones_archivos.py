@@ -29,6 +29,8 @@ def carrito_de_compras(datos_insumos:list):
                     cantidad = float(input(f"INGRESE LA CANTIDAD DEL PRODUCTO({linea[5]}): "))
                     while cantidad > linea[5]:
                         cantidad = float(input(f"REINGRESE UNA CANTIDAD QUE SEA MENOR O IGUAL AL STOCK({linea[5]}): "))
+                    linea[5] = linea[5] - cantidad
+                    
                     precio = float(linea[3].strip("$"))
                     key = linea[1]
                     factura[key] = multiplicacion(precio,cantidad)
