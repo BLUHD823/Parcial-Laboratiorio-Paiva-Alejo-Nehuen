@@ -1,51 +1,51 @@
-1,Disco Duro Interno,Western Digital,$79.99,1TB|!*|7200RPM,0
-2,Disco Duro Externo,Toshiba,$119.99,2TB|!*|USB 3.0|!*|Resistente a golpes,6
-3,SSD Interno,Samsung,$99.99,500GB|!*|NVMe PCIe Gen 4.0|!*|Velocidad de lectura de hasta 7000MB/s,7
-4,Memoria RAM,Corsair,$89.99,16GB|!*|DDR4|!*|Velocidad de 3200MHz,7
-5,Tarjeta de Video,MSI,$299.99,NVIDIA GeForce RTX 3060|!*|12GB GDDR6|!*|DirectX 12 Ultimate,10
-6,Monitor LED,Dell,$199.99,21.5 pulgadas|!*|Resolución Full HD|!*|Puertos HDMI y VGA,8
-7,Teclado Mecánico,Razer,$129.99,Teclas retroiluminadas|!*|Diseño ergonómico|!*|Conexión USB,8
-8,Ratón Inalámbrico,Logitech,$39.99,Conexión inalámbrica 2.4GHz|!*|Diseño ambidiestro|!*|Sensor óptico de alta precisión,0
-9,Auriculares con Micrófono,HyperX,$89.99,Sonido envolvente 7.1|!*|Micrófono desmontable|!*|Diadema ajustable,9
-10,Impresora Multifuncional,Epson,$299.99,Impresión a doble cara automática|!*|Velocidad de impresión de hasta 20 ppm|!*|Conexión Wi-Fi,6
+1,Disco Duro Interno,Western Digital,$79.99,1TB|!*|7200RPM,1
+2,Disco Duro Externo,Toshiba,$119.99,2TB|!*|USB 3.0|!*|Resistente a golpes,0
+3,SSD Interno,Samsung,$99.99,500GB|!*|NVMe PCIe Gen 4.0|!*|Velocidad de lectura de hasta 7000MB/s,5
+4,Memoria RAM,Corsair,$89.99,16GB|!*|DDR4|!*|Velocidad de 3200MHz,1
+5,Tarjeta de Video,MSI,$299.99,NVIDIA GeForce RTX 3060|!*|12GB GDDR6|!*|DirectX 12 Ultimate,8
+6,Monitor LED,Dell,$199.99,21.5 pulgadas|!*|Resolución Full HD|!*|Puertos HDMI y VGA,4
+7,Teclado Mecánico,Razer,$129.99,Teclas retroiluminadas|!*|Diseño ergonómico|!*|Conexión USB,5
+8,Ratón Inalámbrico,Logitech,$39.99,Conexión inalámbrica 2.4GHz|!*|Diseño ambidiestro|!*|Sensor óptico de alta precisión,1
+9,Auriculares con Micrófono,HyperX,$89.99,Sonido envolvente 7.1|!*|Micrófono desmontable|!*|Diadema ajustable,8
+10,Impresora Multifuncional,Epson,$299.99,Impresión a doble cara automática|!*|Velocidad de impresión de hasta 20 ppm|!*|Conexión Wi-Fi,7
 11,Altavoces de PC,Logitech,$49.99,2.1 canales|!*|Potencia de salida de 40W|!*|Control de graves y agudos,2
-12,Cámara Web,Microsoft,$79.99,Resolución Full HD|!*|Micrófono incorporado|!*|Conexión USB,3
-13,Disco Duro Portátil,Seagate,$129.99,4TB|!*|USB 3.0|!*|Resistente a golpes y vibraciones,5
-14,Procesador Intel Core i7,Intel,$399.99,8 núcleos|!*|Frecuencia de 2.8 GHz|!*|Tecnología Hyper-Threading,6
-15,Tarjeta de Sonido Externa,Focusrite,$149.99,2 entradas XLR|!*|2 salidas de línea|!*|Resolución de hasta 24-bit/192kHz,0
-16,Smartphone Samsung Galaxy S21,Samsung,$799.99,Pantalla AMOLED de 6.2 pulgadas|!*|Procesador Exynos 2100|!*|Cámara trasera de 64 MP,1
-17,Smartwatch Apple Watch Series 6,Apple,$399.99,Monitorización del ritmo cardíaco|!*|GPS integrado|!*|Resistente al agua,1
-18,Router Inalámbrico,TP-Link,$79.99,Soporta Wi-Fi 6|!*|Velocidad de hasta 3000 Mbps|!*|Puertos,4
-19,Tablet Apple iPad Air,Apple,$599.99,Pantalla Liquid Retina de 10.9 pulgadas|!*|Chip A14 Bionic|!*|Compatible con Apple Pencil y Magic Keyboard,7
-20,Altavoz Inteligente Amazon Echo Dot,Amazon,$49.99,Asistente de voz Alexa integrado|!*|Conexión Wi-Fi y Bluetooth|!*|Compatible con otros dispositivos inteligentes,10
-21,Teclado y Ratón Inalámbricos,HP,$39.99,Conexión inalámbrica 2.4GHz|!*|Teclado de tamaño completo|!*|Ratón óptico de tres botones,4
-22,Adaptador USB-C a HDMI,Anker,$19.99,Resolución de hasta 4K a 60Hz|!*|Compatible con MacBook, iPad Pro y otros dispositivos USB-C|!*|Conexión Plug and Play,3
-23,Hub USB 3.0 de 4 puertos,UGREEN,$12.99,Velocidad de transferencia de hasta 5Gbps|!*|Compatible con dispositivos USB 2.0 y 1.1|!*|Conexión Plug and Play,10
+12,Cámara Web,Microsoft,$79.99,Resolución Full HD|!*|Micrófono incorporado|!*|Conexión USB,7
+13,Disco Duro Portátil,Seagate,$129.99,4TB|!*|USB 3.0|!*|Resistente a golpes y vibraciones,10
+14,Procesador Intel Core i7,Intel,$399.99,8 núcleos|!*|Frecuencia de 2.8 GHz|!*|Tecnología Hyper-Threading,7
+15,Tarjeta de Sonido Externa,Focusrite,$149.99,2 entradas XLR|!*|2 salidas de línea|!*|Resolución de hasta 24-bit/192kHz,4
+16,Smartphone Samsung Galaxy S21,Samsung,$799.99,Pantalla AMOLED de 6.2 pulgadas|!*|Procesador Exynos 2100|!*|Cámara trasera de 64 MP,2
+17,Smartwatch Apple Watch Series 6,Apple,$399.99,Monitorización del ritmo cardíaco|!*|GPS integrado|!*|Resistente al agua,6
+18,Router Inalámbrico,TP-Link,$79.99,Soporta Wi-Fi 6|!*|Velocidad de hasta 3000 Mbps|!*|Puertos,6
+19,Tablet Apple iPad Air,Apple,$599.99,Pantalla Liquid Retina de 10.9 pulgadas|!*|Chip A14 Bionic|!*|Compatible con Apple Pencil y Magic Keyboard,3
+20,Altavoz Inteligente Amazon Echo Dot,Amazon,$49.99,Asistente de voz Alexa integrado|!*|Conexión Wi-Fi y Bluetooth|!*|Compatible con otros dispositivos inteligentes,7
+21,Teclado y Ratón Inalámbricos,HP,$39.99,Conexión inalámbrica 2.4GHz|!*|Teclado de tamaño completo|!*|Ratón óptico de tres botones,8
+22,Adaptador USB-C a HDMI,Anker,$19.99,"Resolución de hasta 4K a 60Hz|!*|Compatible con MacBook,  iPad Pro y otros dispositivos USB-C|!*|Conexión Plug and Play",9
+23,Hub USB 3.0 de 4 puertos,UGREEN,$12.99,Velocidad de transferencia de hasta 5Gbps|!*|Compatible con dispositivos USB 2.0 y 1.1|!*|Conexión Plug and Play,4
 24,Escáner de Documentos,Epson,$249.99,Resolución óptica de 1200 dpi|!*|Velocidad de escaneo de hasta 35 ppm|!*|Alimentador automático de documentos de 50 páginas,1
-25,Monitor Curvo Samsung,Samsung,$279.99,Resolución Full HD|!*|Tamaño de 27 pulgadas|!*|Frecuencia de actualización de 75Hz,5
-26,Auriculares Inalámbricos,Apple,$159.99,Conexión inalámbrica Bluetooth|!*|Micrófono y controles integrados|!*|Autonomía de hasta 5 horas,9
-27,Cargador Portátil Anker PowerCore,Anker,$59.99,Capacidad de 10000mAh|!*|2 puertos USB|!*|Tecnología PowerIQ para carga rápida,1
-28,Módem de Cable,ARRIS,$89.99,Velocidad de descarga de hasta 686 Mbps|!*|Compatible con la mayoría de los proveedores de servicios de Internet|!*|Conexión Gigabit Ethernet,9
-29,Adaptador Wi-Fi USB,TP-Link,$19.99,Velocidad de hasta 150Mbps|!*|Conexión Plug and Play|!*|Compatible con Windows y Mac,2
-30,Disco Duro Externo SSD,SanDisk,$199.99,Capacidad de 1TB|!*|Velocidad de transferencia de hasta 1050MB/s|!*|Resistente al agua y al polvo,0
-31,Tarjeta de Red Ethernet,Intel,$39.99,Velocidad de transferencia de hasta 1Gbps|!*|Conexión PCIe|!*|Compatible con Windows y Linux,8
-32,Router VPN,NETGEAR,$179.99,Velocidad de hasta 300Mbps|!*|Soporta hasta 20 conexiones VPN|!*|Firewall integrado,7
+25,Monitor Curvo Samsung,Samsung,$279.99,Resolución Full HD|!*|Tamaño de 27 pulgadas|!*|Frecuencia de actualización de 75Hz,6
+26,Auriculares Inalámbricos,Apple,$159.99,Conexión inalámbrica Bluetooth|!*|Micrófono y controles integrados|!*|Autonomía de hasta 5 horas,1
+27,Cargador Portátil Anker PowerCore,Anker,$59.99,Capacidad de 10000mAh|!*|2 puertos USB|!*|Tecnología PowerIQ para carga rápida,5
+28,Módem de Cable,ARRIS,$89.99,Velocidad de descarga de hasta 686 Mbps|!*|Compatible con la mayoría de los proveedores de servicios de Internet|!*|Conexión Gigabit Ethernet,10
+29,Adaptador Wi-Fi USB,TP-Link,$19.99,Velocidad de hasta 150Mbps|!*|Conexión Plug and Play|!*|Compatible con Windows y Mac,5
+30,Disco Duro Externo SSD,SanDisk,$199.99,Capacidad de 1TB|!*|Velocidad de transferencia de hasta 1050MB/s|!*|Resistente al agua y al polvo,8
+31,Tarjeta de Red Ethernet,Intel,$39.99,Velocidad de transferencia de hasta 1Gbps|!*|Conexión PCIe|!*|Compatible con Windows y Linux,10
+32,Router VPN,NETGEAR,$179.99,Velocidad de hasta 300Mbps|!*|Soporta hasta 20 conexiones VPN|!*|Firewall integrado,1
 33,Altavoz Bluetooth JBL Flip 5,JBL,$119.99,Conexión Bluetooth|!*|Autonomía de hasta 12 horas|!*|Resistente al agua y al polvo,4
-34,Memoria RAM Corsair Vengeance LPX,Corsair,$109.99,16GB de capacidad|!*|Velocidad de 3200MHz|!*|Diseño de perfil bajo,7
-35,Cámara de Seguridad WiFi,TP-Link,$54.99,Resolución Full HD|!*|Visión nocturna hasta 30 pies|!*|Notificaciones de detección de movimiento,1
-36,Monitor Gaming ASUS TUF,ASUS,$279.99,Resolución Full HD|!*|Tamaño de 24.5 pulgadas|!*|Frecuencia de actualización de 144Hz,0
-37,Impresora Multifunción HP OfficeJet Pro,HP,$229.99,Impresión, escaneo, copia y fax|!*|Velocidad de impresión de hasta 24 ppm|!*|Conexión Wi-Fi y Ethernet,10
-38,Smartphone Samsung Galaxy S21,Samsung,$799.99,Pantalla Dynamic AMOLED de 6.2 pulgadas|!*|Procesador Exynos 2100|!*|Cámara trasera de 64MP,5
-39,Auriculares con Cancelación de Ruido Sony WH-1000XM4,Sony,$349.99,Cancelación de ruido líder en la industria|!*|Autonomía de hasta 30 horas|!*|Control táctil,0
-40,Teclado Mecánico Corsair K95 RGB Platinum XT,Corsair,$199.99,Interruptores Cherry MX Speed|!*|Retroiluminación RGB por tecla|!*|Descanso de muñeca desmontable,9
-41,Webcam Logitech C920,Logitech,$79.99,Resolución Full HD|!*|Micrófonos estéreo integrados|!*|Enfoque automático,9
+34,Memoria RAM Corsair Vengeance LPX,Corsair,$109.99,16GB de capacidad|!*|Velocidad de 3200MHz|!*|Diseño de perfil bajo,5
+35,Cámara de Seguridad WiFi,TP-Link,$54.99,Resolución Full HD|!*|Visión nocturna hasta 30 pies|!*|Notificaciones de detección de movimiento,3
+36,Monitor Gaming ASUS TUF,ASUS,$279.99,Resolución Full HD|!*|Tamaño de 24.5 pulgadas|!*|Frecuencia de actualización de 144Hz,1
+37,Impresora Multifunción HP OfficeJet Pro,HP,$229.99,Impresión, escaneo, copia y fax|!*|Velocidad de impresión de hasta 24 ppm|!*|Conexión Wi-Fi y Ethernet,0
+38,Smartphone Samsung Galaxy S21,Samsung,$799.99,Pantalla Dynamic AMOLED de 6.2 pulgadas|!*|Procesador Exynos 2100|!*|Cámara trasera de 64MP,1
+39,Auriculares con Cancelación de Ruido Sony WH-1000XM4,Sony,$349.99,Cancelación de ruido líder en la industria|!*|Autonomía de hasta 30 horas|!*|Control táctil,1
+40,Teclado Mecánico Corsair K95 RGB Platinum XT,Corsair,$199.99,Interruptores Cherry MX Speed|!*|Retroiluminación RGB por tecla|!*|Descanso de muñeca desmontable,2
+41,Webcam Logitech C920,Logitech,$79.99,Resolución Full HD|!*|Micrófonos estéreo integrados|!*|Enfoque automático,4
 42,Disco Duro Externo Seagate Backup Plus,Seagate,$99.99,Capacidad de 2TB|!*|Conexión USB 3.0|!*|Compatible con Windows y Mac,0
-43,Smart TV LG OLED,LG,$1499.99,Resolución 4K|!*|Tamaño de 55 pulgadas|!*|Sistema operativo webOS,0
-44,Repetidor Wi-Fi NETGEAR Nighthawk,NETGEAR,$129.99,Velocidad de hasta 1900Mbps|!*|Tecnología Beamforming para mayor alcance|!*|Puerto Ethernet Gigabit,6
-45,Tarjeta Gráfica NVIDIA GeForce RTX 3070,NVIDIA,$699.99,8GB de memoria GDDR6|!*|Arquitectura Ampere de segunda generación|!*|Soporte de trazado de rayos en tiempo real,7
-46,Altavoces para PC Logitech Z623,Logitech,$119.99,Potencia total de 200W RMS|!*|Subwoofer con control de graves|!*|Entrada RCA y auxiliar de 3.5mm,1
-47,Mouse Inalámbrico Logitech MX Master 3,Logitech,$99.99,Conexión inalámbrica Bluetooth o receptor USB|!*|Rueda de desplazamiento electromagnética|!*|Botones personalizables,5
-48,Unidad SSD Interna Samsung 970 EVO Plus,Samsung,$199.99,Capacidad de 1TB|!*|Velocidad,6
-49,Router ASUS RT-AC88U,ASUS,$279.99,Velocidad de hasta 3100Mbps|!*|Procesador dual-core de 1.4GHz|!*|Tecnología MU-MIMO,3
-50,Altavoz Inteligente Amazon Echo Dot,Amazon,$49.99,Asistente de voz Alexa integrado|!*|Conexión Wi-Fi y Bluetooth|!*|Control de dispositivos inteligentes,4
-51,Pantone,MSI,$79.0,ROJO|!*|25,5
+43,Smart TV LG OLED,LG,$1499.99,Resolución 4K|!*|Tamaño de 55 pulgadas|!*|Sistema operativo webOS,4
+44,Repetidor Wi-Fi NETGEAR Nighthawk,NETGEAR,$129.99,Velocidad de hasta 1900Mbps|!*|Tecnología Beamforming para mayor alcance|!*|Puerto Ethernet Gigabit,3
+45,Tarjeta Gráfica NVIDIA GeForce RTX 3070,NVIDIA,$699.99,8GB de memoria GDDR6|!*|Arquitectura Ampere de segunda generación|!*|Soporte de trazado de rayos en tiempo real,8
+46,Altavoces para PC Logitech Z623,Logitech,$119.99,Potencia total de 200W RMS|!*|Subwoofer con control de graves|!*|Entrada RCA y auxiliar de 3.5mm,8
+47,Mouse Inalámbrico Logitech MX Master 3,Logitech,$99.99,Conexión inalámbrica Bluetooth o receptor USB|!*|Rueda de desplazamiento electromagnética|!*|Botones personalizables,3
+48,Unidad SSD Interna Samsung 970 EVO Plus,Samsung,$199.99,Capacidad de 1TB|!*|Velocidad,0
+49,Router ASUS RT-AC88U,ASUS,$279.99,Velocidad de hasta 3100Mbps|!*|Procesador dual-core de 1.4GHz|!*|Tecnología MU-MIMO,8
+50,Altavoz Inteligente Amazon Echo Dot,Amazon,$49.99,Asistente de voz Alexa integrado|!*|Conexión Wi-Fi y Bluetooth|!*|Control de dispositivos inteligentes,5
+51,lol,MSI,$39.0,LOLA,10

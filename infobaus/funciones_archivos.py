@@ -10,7 +10,7 @@ ruta_txt = ".\total.txt"
 multiplicacion = lambda number, porcentaje : number * porcentaje
 
 #6
-def carrito_de_compras(datos_insumos:list):
+def carrito_de_compras(datos_insumos:list,marcas:dict):
     # Resumen:
     #     Función que crea una factura de compra en un diccionario. Donde cada producto es una key y sus value es el
     #     total del precio multiplicado la cantidad
@@ -19,16 +19,33 @@ def carrito_de_compras(datos_insumos:list):
     respuesta = "Si"
     factura = {}
     bandera = False
+    lista_productos = []
+    
+    
+    print("MARCAS: ")
+    for marca in marcas:
+        print(f"    {marca}")
     
     while respuesta=="Si":
         while bandera == False:
+            marcas_usuario = input("INGRESE EL NOMBRE DE LA MARCA: ")
+            while marcas_usuario not in marcas:
+                marcas_usuario = input("REINGRESE EL NOMBRE DE LA MARCA: ")
+            for linea in datos_insumos:
+                if marcas_usuario == linea[2]:
+                    print(f"    Producto: {linea[1]}")
+                    lista_productos.append(linea[1])
             producto = input("INGRESE EL NOMBRE DEL PRODUCTO: ")
+            while producto not in lista_productos:
+                producto = input("REINGRESE EL NOMBRE DEL PRODUCTO: ")
+            lista_productos.clear()
             for linea in datos_insumos:
                 if producto == linea[1]:
                     bandera = True
-                    cantidad = float(input(f"INGRESE LA CANTIDAD DEL PRODUCTO({linea[5]}): "))
-                    while cantidad > linea[5]:
-                        cantidad = float(input(f"REINGRESE UNA CANTIDAD QUE SEA MENOR O IGUAL AL STOCK({linea[5]}): "))
+                    cantidad = input(f"INGRESE LA CANTIDAD DEL PRODUCTO({linea[5]}): ")
+                    while not cantidad.isdigit() or float(cantidad) > linea[5]:
+                        cantidad = input(f"REINGRESE UNA CANTIDAD QUE SEA MENOR O IGUAL AL STOCK({linea[5]}): ")
+                    cantidad = float(cantidad)
                     linea[5] = int(linea[5] - cantidad)
                     precio = float(linea[3].strip("$"))
                     key = linea[1]
@@ -55,9 +72,10 @@ def porcentaje(total):
     #     Función que hace el subtotal de los precios de los productos
     #     Tiene como parametro a al str 'total'
     #     Retorna el resultado del impuesto, ingresado por el usuario, multiplicado por el total de los precios
-    impuesto = int(input("INGRESE EL PORCENTAJE DEL IMPUESTO(Tiene que ser de entre 0% y 100%): "))
-    while impuesto < 0 or impuesto > 100:
-        impuesto = int(input("REINGRESE EL PORCENTAJE DEL IMPUESTO(Tiene que ser de entre 0% y 100%): "))
+    impuesto = input("INGRESE EL PORCENTAJE DEL IMPUESTO(Tiene que ser de entre 0% y 100%): ")
+    while not impuesto.isdigit() or int(impuesto) < 0 or int(impuesto) > 100:
+        impuesto = input("REINGRESE EL PORCENTAJE DEL IMPUESTO(Tiene que ser de entre 0% y 100%): ")
+    impuesto = int(impuesto)
     impuesto = impuesto/100
     sub_total = total - multiplicacion(total,impuesto)
     sub_total = round(sub_total,3)
@@ -194,9 +212,9 @@ def ingresar_precio():
     # Resumen:
     #     Función que le permite al usuario asignarle un precio(entero o flotante), que luego el programa convierte a flotante, para luego pasarlo a str y agregarle el '$'.
     #     Retorna una variable que contiene el precio asignado por el usuario en modo de string con el símbolo '$'.
-    precio = float(input("INGRESE EL PRECIO QUE QUIERA: "))
-    while precio <= 0:
-        precio = int(input("REINGRESE UN PRECIO VÁLIDO: "))
+    precio = input("INGRESE EL PRECIO QUE QUIERA: ")
+    while not precio.isdigit() or int(precio) <= 0:
+        precio = input("REINGRESE UN PRECIO VÁLIDO: ")
     precio = float(precio)
     precio_final = "$"+ str(precio)
     return precio_final

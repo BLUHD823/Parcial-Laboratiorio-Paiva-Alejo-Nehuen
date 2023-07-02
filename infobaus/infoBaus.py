@@ -10,7 +10,7 @@ ruta_arch_csv = "./archivo.csv"
 ruta_arch_json = "./archivo.json"
 
 def menu(ruta,ruta_json):
-    try:
+    
         eleccion = 0
         while eleccion != 10:
             print("-----------------------------------------")
@@ -45,6 +45,7 @@ def menu(ruta,ruta_json):
                     for key, value in diccionario_marcas.items(): 
                         print(f"{key}:{value}")
                 case 3: 
+                    diccionario_marcas = lista_cantidad_marca(datos_insumos)
                     listar_insumos_marca(diccionario_marcas,datos_insumos)
                 case 4: 
                     dato_usuario = input("INGRESE LA CARACTERÍSTICA DEL PRODUCTO: ")
@@ -63,25 +64,20 @@ def menu(ruta,ruta_json):
                             print(f"{key}: {value}")
                         print("\n")
                 case 6:
-                    try:
-                        carro_compras = carrito_de_compras(datos_insumos)
+                        diccionario_marcas = lista_cantidad_marca(datos_insumos)
+                        carro_compras = carrito_de_compras(datos_insumos,diccionario_marcas)
                         for compra in carro_compras.items():
                             print(compra)
                         total = total_compra(carro_compras)
                         sub_total = porcentaje(total)
                         modificar_txt(ruta_txt,carro_compras,total,sub_total)
-                    except ValueError:
-                        print("LA CANTIDAD INGRESADA O EL PORCENTAJE DE IMPUESTO NO ES UN NÚMERO, INGRESE UN NÚMERO")
                 case 7:
                         dict_disco = guardar_disco_duro(datos_insumos)
                         archivo_json(ruta_json,dict_disco)
                 case 8:
-                    try:
                         lista_json = leer_archivo_json(ruta_json)
                         for item in lista_json:
                             print(f"    {item}")
-                    except json.decoder.JSONDecodeError:
-                        print("No hay valores guardados en el archivo 'discos.json' ingrese datos con la opción 8.")
                 case 9:
                     lista_inflacionaria = inflacion_lista(datos_insumos)
                     reemplazar_csv(ruta,lista_inflacionaria)
@@ -95,12 +91,7 @@ def menu(ruta,ruta_json):
                     datos_insumos.append(lista)
                     diccionario_actualizado =  crear_diccionario(datos_insumos)
                     elegir_archivo(ruta_arch_csv,ruta_arch_json,datos_insumos,diccionario_actualizado)
-    except UnboundLocalError:
-        print("\nPARA USAR EL RESTO DE LAS FUNCIONES, PRIMERO TIENE QUE INICIALIZAR LAS PRIMERAS DOS OPCIONES '1-TRAER DATOS DESDE ARCHIVO.' Y '-2LISTAR CANTIDAD POR MARCA.' ")
-        menu(ruta,ruta_json)
-    except ValueError:
-            print("NO SE PUEDE TENER ESE TIPO DE DATOS.")
-            menu(ruta,ruta_json)
+    
     
     
                 

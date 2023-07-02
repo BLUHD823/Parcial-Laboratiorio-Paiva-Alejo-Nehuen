@@ -1,5 +1,5 @@
 FACTURA: 
-    Producto: SSD Interno    Precio: 799.92 
+    Producto: Smart TV LG OLED    Precio: 13499.91 
 
-    El total de la compra es: 799.92
-    El subtotal de la compra es: 799.92
+    El total de la compra es: 13499.91
+    El subtotal de la compra es: 0.0
