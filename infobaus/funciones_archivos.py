@@ -1,6 +1,7 @@
 import csv
 import json
 import random
+import re
 #Resumen:
 #   Variable que guarda la ruta del archivo txt
 ruta_txt = ".\total.txt"
@@ -32,7 +33,7 @@ def carrito_de_compras(datos_insumos:list,marcas:dict):
             while marcas_usuario not in marcas:
                 marcas_usuario = input("REINGRESE EL NOMBRE DE LA MARCA: ")
             for linea in datos_insumos:
-                if marcas_usuario == linea[2]:
+                if re.search(marcas_usuario, linea[2]):
                     print(f"    Producto: {linea[1]}")
                     lista_productos.append(linea[1])
             producto = input("INGRESE EL NOMBRE DEL PRODUCTO: ")
@@ -40,10 +41,10 @@ def carrito_de_compras(datos_insumos:list,marcas:dict):
                 producto = input("REINGRESE EL NOMBRE DEL PRODUCTO: ")
             lista_productos.clear()
             for linea in datos_insumos:
-                if producto == linea[1]:
+                if re.search(marcas_usuario, linea[1]):
                     bandera = True
                     cantidad = input(f"INGRESE LA CANTIDAD DEL PRODUCTO({linea[5]}): ")
-                    while not cantidad.isdigit() or float(cantidad) > linea[5]:
+                    while not cantidad.isdigit() or int(cantidad) > linea[5]:
                         cantidad = input(f"REINGRESE UNA CANTIDAD QUE SEA MENOR O IGUAL AL STOCK({linea[5]}): ")
                     cantidad = float(cantidad)
                     linea[5] = int(linea[5] - cantidad)
@@ -144,7 +145,7 @@ def inflacion(lista:list):
     
     resultado = 0
     for item in lista:
-        if isinstance(item, str) and "$" in item:
+        if isinstance(item, str) and re.search(r'\$', item):
             numero = float(item.strip("$"))
             resultado = numero + multiplicacion(numero,0.084)
             resultado = "$"+str(resultado)
@@ -193,7 +194,7 @@ def elegir_marca(listado_marcas:list):
     while bandera == False:
         eleccion = input("INGRESE EL NOMBRE DE LA MARCA DEL NUEVO PRODUCTO: ")
         for item in listado_marcas:
-            if eleccion == item:
+            if re.search(eleccion,item):
                 marca_elegida = item
                 bandera = True
     return marca_elegida

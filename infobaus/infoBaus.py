@@ -10,7 +10,7 @@ ruta_arch_csv = "./archivo.csv"
 ruta_arch_json = "./archivo.json"
 
 def menu(ruta,ruta_json):
-    
+    try:
         eleccion = 0
         while eleccion != 10:
             print("-----------------------------------------")
@@ -29,10 +29,10 @@ def menu(ruta,ruta_json):
             print("10-SALIR DEL PROGRAMA. ")
             print("11-CREAR NUEVO PRODUCTO. ")
         
-            eleccion = int(input("INGRESE SU RESPUESTA: "))
-            while eleccion <=0 or eleccion >11 or not isinstance(eleccion, int): 
-                eleccion = int(input("REINGRESE SU RESPUESTA CON LOS VALORES ADECUADOS: "))
-            
+            eleccion = input("INGRESE SU RESPUESTA: ")
+            while not  eleccion.isdigit() or int(eleccion) <=0 or int(eleccion) >11: 
+                eleccion = input("REINGRESE SU RESPUESTA CON LOS VALORES ADECUADOS: ")
+            eleccion = int(eleccion)
             match eleccion:
                 case 1:
                     listado = leer_csv(ruta)
@@ -48,8 +48,7 @@ def menu(ruta,ruta_json):
                     diccionario_marcas = lista_cantidad_marca(datos_insumos)
                     listar_insumos_marca(diccionario_marcas,datos_insumos)
                 case 4: 
-                    dato_usuario = input("INGRESE LA CARACTERÍSTICA DEL PRODUCTO: ")
-                    listar_insumos_caracteristica(dato_usuario,datos_insumos)
+                    listar_insumos_caracteristica(datos_insumos)
                 case 5:
                     diccionario = crear_diccionario(datos_insumos)
                     diccionario_ordenado_descendente = ordenar_diccionario_asc_des(diccionario,'Precio', True)
@@ -91,10 +90,9 @@ def menu(ruta,ruta_json):
                     datos_insumos.append(lista)
                     diccionario_actualizado =  crear_diccionario(datos_insumos)
                     elegir_archivo(ruta_arch_csv,ruta_arch_json,datos_insumos,diccionario_actualizado)
-    
-    
-    
-                
+    except UnboundLocalError:
+         print("    TIENES QUE INICIALIZAR LA PRIMERA FUNCIÓN.")
+         menu(ruta,ruta_json)
 menu(ruta,ruta_json)
 
 

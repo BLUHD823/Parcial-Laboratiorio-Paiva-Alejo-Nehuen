@@ -1,4 +1,5 @@
 import random
+import re
 ruta = ".\Insumos.csv - Hoja 1.csv"
 
 
@@ -66,24 +67,33 @@ def listar_insumos_marca(diccionario:dict,datos_insumos:list):
     
     while bandera == False:
         marca_usuario = input("INGRESE EL NOMBRE DE LA MARCA: ")
+        while marca_usuario.strip() == "" or marca_usuario.isspace():
+            marca_usuario = input("REINGRESE EL NOMBRE DE LA MARCA: ")
         for marca in diccionario:
             if marca_usuario == marca:
                 bandera = True
                 print(f"{marca_usuario}: ")
                 for linea in datos_insumos:
-                    if marca_usuario in linea[2]:
+                    if re.search(marca_usuario, linea[2]):
                         print(f"    Nombre: {linea[1]}///Precio: {linea[3]} ")
     
 
 #4
-def listar_insumos_caracteristica(dato_usuario:str,datos_insumos:list):
+def listar_insumos_caracteristica(datos_insumos:list):
     #Resumen:
     #     Función que con utiliza una característica que ingresa el usuario y devueve todos los productos que la tienen.
     #     Tiene como parametros a 'dato_usuario' que es un string que ingresa el usuario y la lista 'datos_insumos'.
     lista_insumos_coincidentes = []
-    for linea in datos_insumos:
-        if dato_usuario in linea[4]:
-            lista_insumos_coincidentes.append(linea[1])
+    bandera = False
+
+    while bandera == False:
+        dato_usuario = input("INGRESE LA CARACTERÍSTICA DEL PRODUCTO: ")
+        while dato_usuario.strip() == "" or dato_usuario.isspace():
+            dato_usuario = input("INGRESE LA CARACTERÍSTICA DEL PRODUCTO: ")
+        for linea in datos_insumos:
+            if re.search(dato_usuario, linea[4]):
+                bandera = True
+                lista_insumos_coincidentes.append(linea[1])
     for producto in lista_insumos_coincidentes:
         print(f"    {producto}")
 
@@ -113,7 +123,6 @@ def crear_diccionario(datos_insumos: list):
     for linea in datos_insumos:
         diccionario ={}
         diccionario['ID'] = linea[0]
-        diccionario['Nombre'] = linea[1]
         diccionario['Marca'] = linea[2]
         diccionario['Precio'] = float(linea[3].strip("$"))
         caracteristica = linea[4].split("|!*|")  

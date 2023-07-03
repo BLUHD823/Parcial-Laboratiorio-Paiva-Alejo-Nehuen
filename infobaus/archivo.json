@@ -1,418 +1,373 @@
 [
     {
         "ID": "1",
-        "Nombre": "Disco Duro Interno",
         "Marca": "Western Digital",
-        "Precio": 79.99,
+        "Precio": 86.70916,
         "Caracter\u00edstica": "1TB",
-        "Stock": 0
+        "Stock": 7
     },
     {
         "ID": "2",
-        "Nombre": "Disco Duro Externo",
         "Marca": "Toshiba",
-        "Precio": 119.99,
+        "Precio": 130.06915999999998,
         "Caracter\u00edstica": "2TB",
-        "Stock": 6
-    },
-    {
-        "ID": "3",
-        "Nombre": "SSD Interno",
-        "Marca": "Samsung",
-        "Precio": 99.99,
-        "Caracter\u00edstica": "500GB",
-        "Stock": 7
-    },
-    {
-        "ID": "4",
-        "Nombre": "Memoria RAM",
-        "Marca": "Corsair",
-        "Precio": 89.99,
-        "Caracter\u00edstica": "16GB",
-        "Stock": 7
-    },
-    {
-        "ID": "5",
-        "Nombre": "Tarjeta de Video",
-        "Marca": "MSI",
-        "Precio": 299.99,
-        "Caracter\u00edstica": "NVIDIA GeForce RTX 3060",
-        "Stock": 10
-    },
-    {
-        "ID": "6",
-        "Nombre": "Monitor LED",
-        "Marca": "Dell",
-        "Precio": 199.99,
-        "Caracter\u00edstica": "21.5 pulgadas",
-        "Stock": 8
-    },
-    {
-        "ID": "7",
-        "Nombre": "Teclado Mec\u00e1nico",
-        "Marca": "Razer",
-        "Precio": 129.99,
-        "Caracter\u00edstica": "Teclas retroiluminadas",
-        "Stock": 8
-    },
-    {
-        "ID": "8",
-        "Nombre": "Rat\u00f3n Inal\u00e1mbrico",
-        "Marca": "Logitech",
-        "Precio": 39.99,
-        "Caracter\u00edstica": "Conexi\u00f3n inal\u00e1mbrica 2.4GHz",
-        "Stock": 0
-    },
-    {
-        "ID": "9",
-        "Nombre": "Auriculares con Micr\u00f3fono",
-        "Marca": "HyperX",
-        "Precio": 89.99,
-        "Caracter\u00edstica": "Sonido envolvente 7.1",
-        "Stock": 9
-    },
-    {
-        "ID": "10",
-        "Nombre": "Impresora Multifuncional",
-        "Marca": "Epson",
-        "Precio": 299.99,
-        "Caracter\u00edstica": "Impresi\u00f3n a doble cara autom\u00e1tica",
-        "Stock": 6
-    },
-    {
-        "ID": "11",
-        "Nombre": "Altavoces de PC",
-        "Marca": "Logitech",
-        "Precio": 49.99,
-        "Caracter\u00edstica": "2.1 canales",
-        "Stock": 2
-    },
-    {
-        "ID": "12",
-        "Nombre": "C\u00e1mara Web",
-        "Marca": "Microsoft",
-        "Precio": 79.99,
-        "Caracter\u00edstica": "Resoluci\u00f3n Full HD",
-        "Stock": 3
-    },
-    {
-        "ID": "13",
-        "Nombre": "Disco Duro Port\u00e1til",
-        "Marca": "Seagate",
-        "Precio": 129.99,
-        "Caracter\u00edstica": "4TB",
         "Stock": 5
     },
     {
-        "ID": "14",
-        "Nombre": "Procesador Intel Core i7",
-        "Marca": "Intel",
-        "Precio": 399.99,
-        "Caracter\u00edstica": "8 n\u00facleos",
-        "Stock": 6
-    },
-    {
-        "ID": "15",
-        "Nombre": "Tarjeta de Sonido Externa",
-        "Marca": "Focusrite",
-        "Precio": 149.99,
-        "Caracter\u00edstica": "2 entradas XLR",
+        "ID": "3",
+        "Marca": "Samsung",
+        "Precio": 108.38915999999999,
+        "Caracter\u00edstica": "500GB",
         "Stock": 0
     },
     {
-        "ID": "16",
-        "Nombre": "Smartphone Samsung Galaxy S21",
-        "Marca": "Samsung",
-        "Precio": 799.99,
-        "Caracter\u00edstica": "Pantalla AMOLED de 6.2 pulgadas",
+        "ID": "4",
+        "Marca": "Corsair",
+        "Precio": 97.54916,
+        "Caracter\u00edstica": "16GB",
+        "Stock": 0
+    },
+    {
+        "ID": "5",
+        "Marca": "MSI",
+        "Precio": 325.18916,
+        "Caracter\u00edstica": "NVIDIA GeForce RTX 3060",
+        "Stock": 5
+    },
+    {
+        "ID": "6",
+        "Marca": "Dell",
+        "Precio": 216.78916,
+        "Caracter\u00edstica": "21.5 pulgadas",
+        "Stock": 6
+    },
+    {
+        "ID": "7",
+        "Marca": "Razer",
+        "Precio": 140.90916,
+        "Caracter\u00edstica": "Teclas retroiluminadas",
+        "Stock": 3
+    },
+    {
+        "ID": "8",
+        "Marca": "Logitech",
+        "Precio": 43.349160000000005,
+        "Caracter\u00edstica": "Conexi\u00f3n inal\u00e1mbrica 2.4GHz",
         "Stock": 1
     },
     {
-        "ID": "17",
-        "Nombre": "Smartwatch Apple Watch Series 6",
-        "Marca": "Apple",
-        "Precio": 399.99,
-        "Caracter\u00edstica": "Monitorizaci\u00f3n del ritmo card\u00edaco",
+        "ID": "9",
+        "Marca": "HyperX",
+        "Precio": 97.54916,
+        "Caracter\u00edstica": "Sonido envolvente 7.1",
+        "Stock": 8
+    },
+    {
+        "ID": "10",
+        "Marca": "Epson",
+        "Precio": 325.18916,
+        "Caracter\u00edstica": "Impresi\u00f3n a doble cara autom\u00e1tica",
+        "Stock": 0
+    },
+    {
+        "ID": "11",
+        "Marca": "Logitech",
+        "Precio": 54.18916,
+        "Caracter\u00edstica": "2.1 canales",
+        "Stock": 8
+    },
+    {
+        "ID": "12",
+        "Marca": "Microsoft",
+        "Precio": 86.70916,
+        "Caracter\u00edstica": "Resoluci\u00f3n Full HD",
         "Stock": 1
     },
     {
-        "ID": "18",
-        "Nombre": "Router Inal\u00e1mbrico",
-        "Marca": "TP-Link",
-        "Precio": 79.99,
-        "Caracter\u00edstica": "Soporta Wi-Fi 6",
+        "ID": "13",
+        "Marca": "Seagate",
+        "Precio": 140.90916,
+        "Caracter\u00edstica": "4TB",
         "Stock": 4
     },
     {
-        "ID": "19",
-        "Nombre": "Tablet Apple iPad Air",
+        "ID": "14",
+        "Marca": "Intel",
+        "Precio": 433.58916,
+        "Caracter\u00edstica": "8 n\u00facleos",
+        "Stock": 0
+    },
+    {
+        "ID": "15",
+        "Marca": "Focusrite",
+        "Precio": 162.58916000000002,
+        "Caracter\u00edstica": "2 entradas XLR",
+        "Stock": 10
+    },
+    {
+        "ID": "16",
+        "Marca": "Samsung",
+        "Precio": 867.18916,
+        "Caracter\u00edstica": "Pantalla AMOLED de 6.2 pulgadas",
+        "Stock": 0
+    },
+    {
+        "ID": "17",
         "Marca": "Apple",
-        "Precio": 599.99,
+        "Precio": 433.58916,
+        "Caracter\u00edstica": "Monitorizaci\u00f3n del ritmo card\u00edaco",
+        "Stock": 5
+    },
+    {
+        "ID": "18",
+        "Marca": "TP-Link",
+        "Precio": 86.70916,
+        "Caracter\u00edstica": "Soporta Wi-Fi 6",
+        "Stock": 8
+    },
+    {
+        "ID": "19",
+        "Marca": "Apple",
+        "Precio": 650.3891600000001,
         "Caracter\u00edstica": "Pantalla Liquid Retina de 10.9 pulgadas",
         "Stock": 7
     },
     {
         "ID": "20",
-        "Nombre": "Altavoz Inteligente Amazon Echo Dot",
         "Marca": "Amazon",
-        "Precio": 49.99,
+        "Precio": 54.18916,
         "Caracter\u00edstica": "Asistente de voz Alexa integrado",
-        "Stock": 10
+        "Stock": 6
     },
     {
         "ID": "21",
-        "Nombre": "Teclado y Rat\u00f3n Inal\u00e1mbricos",
         "Marca": "HP",
-        "Precio": 39.99,
+        "Precio": 43.349160000000005,
         "Caracter\u00edstica": "Conexi\u00f3n inal\u00e1mbrica 2.4GHz",
-        "Stock": 4
-    },
-    {
-        "ID": "22",
-        "Nombre": "Adaptador USB-C a HDMI",
-        "Marca": "Anker",
-        "Precio": 19.99,
-        "Caracter\u00edstica": "Resoluci\u00f3n de hasta 4K a 60Hz",
-        "Stock": " iPad Pro y otros dispositivos USB-C|!*|Conexi\u00f3n Plug and Play"
-    },
-    {
-        "ID": "23",
-        "Nombre": "Hub USB 3.0 de 4 puertos",
-        "Marca": "UGREEN",
-        "Precio": 12.99,
-        "Caracter\u00edstica": "Velocidad de transferencia de hasta 5Gbps",
-        "Stock": 10
-    },
-    {
-        "ID": "24",
-        "Nombre": "Esc\u00e1ner de Documentos",
-        "Marca": "Epson",
-        "Precio": 249.99,
-        "Caracter\u00edstica": "Resoluci\u00f3n \u00f3ptica de 1200 dpi",
-        "Stock": 1
-    },
-    {
-        "ID": "25",
-        "Nombre": "Monitor Curvo Samsung",
-        "Marca": "Samsung",
-        "Precio": 279.99,
-        "Caracter\u00edstica": "Resoluci\u00f3n Full HD",
-        "Stock": 5
-    },
-    {
-        "ID": "26",
-        "Nombre": "Auriculares Inal\u00e1mbricos",
-        "Marca": "Apple",
-        "Precio": 159.99,
-        "Caracter\u00edstica": "Conexi\u00f3n inal\u00e1mbrica Bluetooth",
-        "Stock": 9
-    },
-    {
-        "ID": "27",
-        "Nombre": "Cargador Port\u00e1til Anker PowerCore",
-        "Marca": "Anker",
-        "Precio": 59.99,
-        "Caracter\u00edstica": "Capacidad de 10000mAh",
-        "Stock": 1
-    },
-    {
-        "ID": "28",
-        "Nombre": "M\u00f3dem de Cable",
-        "Marca": "ARRIS",
-        "Precio": 89.99,
-        "Caracter\u00edstica": "Velocidad de descarga de hasta 686 Mbps",
-        "Stock": 9
-    },
-    {
-        "ID": "29",
-        "Nombre": "Adaptador Wi-Fi USB",
-        "Marca": "TP-Link",
-        "Precio": 19.99,
-        "Caracter\u00edstica": "Velocidad de hasta 150Mbps",
         "Stock": 2
     },
     {
-        "ID": "30",
-        "Nombre": "Disco Duro Externo SSD",
-        "Marca": "SanDisk",
-        "Precio": 199.99,
-        "Caracter\u00edstica": "Capacidad de 1TB",
-        "Stock": 0
-    },
-    {
-        "ID": "31",
-        "Nombre": "Tarjeta de Red Ethernet",
-        "Marca": "Intel",
-        "Precio": 39.99,
-        "Caracter\u00edstica": "Velocidad de transferencia de hasta 1Gbps",
-        "Stock": 8
-    },
-    {
-        "ID": "32",
-        "Nombre": "Router VPN",
-        "Marca": "NETGEAR",
-        "Precio": 179.99,
-        "Caracter\u00edstica": "Velocidad de hasta 300Mbps",
-        "Stock": 7
-    },
-    {
-        "ID": "33",
-        "Nombre": "Altavoz Bluetooth JBL Flip 5",
-        "Marca": "JBL",
-        "Precio": 119.99,
-        "Caracter\u00edstica": "Conexi\u00f3n Bluetooth",
+        "ID": "22",
+        "Marca": "Anker",
+        "Precio": 21.669159999999998,
+        "Caracter\u00edstica": "Resoluci\u00f3n de hasta 4K a 60Hz",
         "Stock": 4
     },
     {
-        "ID": "34",
-        "Nombre": "Memoria RAM Corsair Vengeance LPX",
-        "Marca": "Corsair",
-        "Precio": 109.99,
-        "Caracter\u00edstica": "16GB de capacidad",
+        "ID": "23",
+        "Marca": "UGREEN",
+        "Precio": 14.08116,
+        "Caracter\u00edstica": "Velocidad de transferencia de hasta 5Gbps",
+        "Stock": 9
+    },
+    {
+        "ID": "24",
+        "Marca": "Epson",
+        "Precio": 270.98916,
+        "Caracter\u00edstica": "Resoluci\u00f3n \u00f3ptica de 1200 dpi",
+        "Stock": 5
+    },
+    {
+        "ID": "25",
+        "Marca": "Samsung",
+        "Precio": 303.50916,
+        "Caracter\u00edstica": "Resoluci\u00f3n Full HD",
+        "Stock": 10
+    },
+    {
+        "ID": "26",
+        "Marca": "Apple",
+        "Precio": 173.42916000000002,
+        "Caracter\u00edstica": "Conexi\u00f3n inal\u00e1mbrica Bluetooth",
         "Stock": 7
     },
     {
-        "ID": "35",
-        "Nombre": "C\u00e1mara de Seguridad WiFi",
+        "ID": "27",
+        "Marca": "Anker",
+        "Precio": 65.02916,
+        "Caracter\u00edstica": "Capacidad de 10000mAh",
+        "Stock": 6
+    },
+    {
+        "ID": "28",
+        "Marca": "ARRIS",
+        "Precio": 97.54916,
+        "Caracter\u00edstica": "Velocidad de descarga de hasta 686 Mbps",
+        "Stock": 6
+    },
+    {
+        "ID": "29",
         "Marca": "TP-Link",
-        "Precio": 54.99,
+        "Precio": 21.669159999999998,
+        "Caracter\u00edstica": "Velocidad de hasta 150Mbps",
+        "Stock": 4
+    },
+    {
+        "ID": "30",
+        "Marca": "SanDisk",
+        "Precio": 216.78916,
+        "Caracter\u00edstica": "Capacidad de 1TB",
+        "Stock": 8
+    },
+    {
+        "ID": "31",
+        "Marca": "Intel",
+        "Precio": 43.349160000000005,
+        "Caracter\u00edstica": "Velocidad de transferencia de hasta 1Gbps",
+        "Stock": 7
+    },
+    {
+        "ID": "32",
+        "Marca": "NETGEAR",
+        "Precio": 195.10916,
+        "Caracter\u00edstica": "Velocidad de hasta 300Mbps",
+        "Stock": 2
+    },
+    {
+        "ID": "33",
+        "Marca": "JBL",
+        "Precio": 130.06915999999998,
+        "Caracter\u00edstica": "Conexi\u00f3n Bluetooth",
+        "Stock": 8
+    },
+    {
+        "ID": "34",
+        "Marca": "Corsair",
+        "Precio": 119.22916,
+        "Caracter\u00edstica": "16GB de capacidad",
+        "Stock": 8
+    },
+    {
+        "ID": "35",
+        "Marca": "TP-Link",
+        "Precio": 59.60916,
         "Caracter\u00edstica": "Resoluci\u00f3n Full HD",
-        "Stock": 1
+        "Stock": 2
     },
     {
         "ID": "36",
-        "Nombre": "Monitor Gaming ASUS TUF",
         "Marca": "ASUS",
-        "Precio": 279.99,
+        "Precio": 303.50916,
         "Caracter\u00edstica": "Resoluci\u00f3n Full HD",
-        "Stock": 0
+        "Stock": 2
     },
     {
         "ID": "37",
-        "Nombre": "Impresora Multifunci\u00f3n HP OfficeJet Pro",
         "Marca": "HP",
-        "Precio": 229.99,
+        "Precio": 249.30916000000002,
         "Caracter\u00edstica": "Impresi\u00f3n",
         "Stock": " escaneo"
     },
     {
         "ID": "38",
-        "Nombre": "Smartphone Samsung Galaxy S21",
         "Marca": "Samsung",
-        "Precio": 799.99,
+        "Precio": 867.18916,
         "Caracter\u00edstica": "Pantalla Dynamic AMOLED de 6.2 pulgadas",
         "Stock": 5
     },
     {
         "ID": "39",
-        "Nombre": "Auriculares con Cancelaci\u00f3n de Ruido Sony WH-1000XM4",
         "Marca": "Sony",
-        "Precio": 349.99,
+        "Precio": 379.38916,
         "Caracter\u00edstica": "Cancelaci\u00f3n de ruido l\u00edder en la industria",
-        "Stock": 0
+        "Stock": 1
     },
     {
         "ID": "40",
-        "Nombre": "Teclado Mec\u00e1nico Corsair K95 RGB Platinum XT",
         "Marca": "Corsair",
-        "Precio": 199.99,
+        "Precio": 216.78916,
         "Caracter\u00edstica": "Interruptores Cherry MX Speed",
-        "Stock": 9
+        "Stock": 3
     },
     {
         "ID": "41",
-        "Nombre": "Webcam Logitech C920",
         "Marca": "Logitech",
-        "Precio": 79.99,
+        "Precio": 86.70916,
         "Caracter\u00edstica": "Resoluci\u00f3n Full HD",
-        "Stock": 9
+        "Stock": 2
     },
     {
         "ID": "42",
-        "Nombre": "Disco Duro Externo Seagate Backup Plus",
         "Marca": "Seagate",
-        "Precio": 99.99,
+        "Precio": 108.38915999999999,
         "Caracter\u00edstica": "Capacidad de 2TB",
         "Stock": 0
     },
     {
         "ID": "43",
-        "Nombre": "Smart TV LG OLED",
         "Marca": "LG",
-        "Precio": 1499.99,
+        "Precio": 1625.98916,
         "Caracter\u00edstica": "Resoluci\u00f3n 4K",
         "Stock": 0
     },
     {
         "ID": "44",
-        "Nombre": "Repetidor Wi-Fi NETGEAR Nighthawk",
         "Marca": "NETGEAR",
-        "Precio": 129.99,
+        "Precio": 140.90916,
         "Caracter\u00edstica": "Velocidad de hasta 1900Mbps",
-        "Stock": 6
+        "Stock": 0
     },
     {
         "ID": "45",
-        "Nombre": "Tarjeta Gr\u00e1fica NVIDIA GeForce RTX 3070",
         "Marca": "NVIDIA",
-        "Precio": 699.99,
+        "Precio": 758.78916,
         "Caracter\u00edstica": "8GB de memoria GDDR6",
-        "Stock": 7
+        "Stock": 2
     },
     {
         "ID": "46",
-        "Nombre": "Altavoces para PC Logitech Z623",
         "Marca": "Logitech",
-        "Precio": 119.99,
+        "Precio": 130.06915999999998,
         "Caracter\u00edstica": "Potencia total de 200W RMS",
-        "Stock": 1
-    },
-    {
-        "ID": "47",
-        "Nombre": "Mouse Inal\u00e1mbrico Logitech MX Master 3",
-        "Marca": "Logitech",
-        "Precio": 99.99,
-        "Caracter\u00edstica": "Conexi\u00f3n inal\u00e1mbrica Bluetooth o receptor USB",
         "Stock": 5
     },
     {
+        "ID": "47",
+        "Marca": "Logitech",
+        "Precio": 108.38915999999999,
+        "Caracter\u00edstica": "Conexi\u00f3n inal\u00e1mbrica Bluetooth o receptor USB",
+        "Stock": 0
+    },
+    {
         "ID": "48",
-        "Nombre": "Unidad SSD Interna Samsung 970 EVO Plus",
         "Marca": "Samsung",
-        "Precio": 199.99,
+        "Precio": 216.78916,
         "Caracter\u00edstica": "Capacidad de 1TB",
-        "Stock": 6
+        "Stock": 0
     },
     {
         "ID": "49",
-        "Nombre": "Router ASUS RT-AC88U",
         "Marca": "ASUS",
-        "Precio": 279.99,
+        "Precio": 303.50916,
         "Caracter\u00edstica": "Velocidad de hasta 3100Mbps",
         "Stock": 3
     },
     {
         "ID": "50",
-        "Nombre": "Altavoz Inteligente Amazon Echo Dot",
         "Marca": "Amazon",
-        "Precio": 49.99,
+        "Precio": 54.18916,
         "Caracter\u00edstica": "Asistente de voz Alexa integrado",
-        "Stock": 4
+        "Stock": 1
     },
     {
         "ID": 51,
-        "Nombre": "Pantone",
-        "Marca": "MSI",
-        "Precio": 79.0,
-        "Caracter\u00edstica": "ROJO",
-        "Stock": 5
+        "Marca": "Kingston",
+        "Precio": 39.0,
+        "Caracter\u00edstica": "rojo",
+        "Stock": 3
     },
     {
         "ID": 52,
-        "Nombre": "pantone",
-        "Marca": "NVIDIA",
-        "Precio": 89.0,
+        "Marca": "MSI",
+        "Precio": 39.0,
         "Caracter\u00edstica": "NADA",
-        "Stock": 10
+        "Stock": 6
+    },
+    {
+        "ID": 53,
+        "Marca": "MSI",
+        "Precio": 40.0,
+        "Caracter\u00edstica": "LEL",
+        "Stock": 6
     }
 ]
