@@ -41,7 +41,7 @@ def carrito_de_compras(datos_insumos:list,marcas:dict):
                 producto = input("REINGRESE EL NOMBRE DEL PRODUCTO: ")
             lista_productos.clear()
             for linea in datos_insumos:
-                if re.search(marcas_usuario, linea[1]):
+                if re.search(producto, linea[1]):
                     bandera = True
                     cantidad = input(f"INGRESE LA CANTIDAD DEL PRODUCTO({linea[5]}): ")
                     while not cantidad.isdigit() or int(cantidad) > linea[5]:

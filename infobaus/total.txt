@@ -1,6 +1,0 @@
-FACTURA: 
-    Producto: Smart TV LG OLED    Precio: 5999.96 
-    Producto: Repetidor Wi-Fi NETGEAR Nighthawk    Precio: 0.0 
-
-    El total de la compra es: 5999.96
-    El subtotal de la compra es: 4739.968
