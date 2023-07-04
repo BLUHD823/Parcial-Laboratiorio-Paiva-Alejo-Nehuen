@@ -119,7 +119,7 @@ def archivo_json(ruta_json:str,dict_disco:dict):
     with open(ruta_json,'w+', encoding='UTF-8') as file:
         json.dump(dict_disco,file,indent=4)
 
-8#
+#8
 def leer_archivo_json(ruta_json:str):
     # Resumen:
     #     Función que abre el archivo json y trae los datos del mismo, en forma de lista.
@@ -235,6 +235,8 @@ def agregar_caracteristica():
         caract_ingresada = input("INGRESE UNA CARACTERÍSTICA: ")
         string_caracteristica = string_caracteristica + "|!*|" + caract_ingresada
         respuesta = input("DESEA AGREGAR MÁS CARACTERÍSTICAS(Si/No): ")
+        while respuesta != "Si" and respuesta != "No": 
+            respuesta = input("REINGRESE UNA RESPUESTA CORRECTA(SI/NO): ")
     return string_caracteristica
 
 def crear_linea(listado_marcas:list,datos_insumos:list):
